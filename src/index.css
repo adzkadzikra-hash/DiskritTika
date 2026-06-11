@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Source Sans Pro", ui-sans-serif, system-ui, sans-serif;
+
+  /* Theme overrides with elegant deep violet hued branding colors suitable for dark mode */
+  --color-blue-50: #1a152d;
+  --color-blue-100: #2b1f4c;
+  --color-blue-200: #422d7c;
+  --color-blue-300: #6d42d3;
+  --color-blue-400: #8f62f8;
+  --color-blue-500: #a78bff;
+  --color-blue-600: #bfa3ff;
+  --color-blue-700: #d8c2ff;
+  --color-blue-800: #ede0ff;
+
+  /* Custom subtle shadows integrated with violet ambient glow for dark mode */
+  --shadow-sm: 0 1px 2px rgba(139, 92, 246, 0.15);
+  --shadow-md: 0 4px 6px -1px rgba(139, 92, 246, 0.2), 0 2px 4px -1px rgba(139, 92, 246, 0.15);
+  --shadow-lg: 0 10px 15px -3px rgba(139, 92, 246, 0.25), 0 4px 6px -2px rgba(139, 92, 246, 0.15);
+  --shadow-xl: 0 20px 25px -5px rgba(139, 92, 246, 0.3), 0 10px 10px -5px rgba(139, 92, 246, 0.15);
+}
+
+/* Custom Selection color */
+::selection {
+  background-color: #8b5cf6 !important;
+  color: #ffffff !important;
+}
+
+/* Pure CSS Global Dark Mode Core Overrides */
+html, body {
+  background-color: #0b0f19 !important; /* Premium Dark Navy */
+  background-image: 
+    radial-gradient(rgba(139, 92, 246, 0.08) 1.2px, transparent 1.2px),
+    radial-gradient(rgba(139, 92, 246, 0.03) 1.2px, transparent 1.2px) !important;
+  background-size: 32px 32px !important;
+  background-position: 0 0, 16px 16px !important;
+  color: #f1f5f9 !important;
+}
+
+/* Force dark backgrounds on cards & wrappers */
+.bg-white,
+div.bg-white,
+header.bg-white,
+footer.bg-white,
+aside.bg-white {
+  background-color: #111827 !important; /* Elegant midnight/gray-900 border compatible dark cell */
+}
+
+/* Transparent Header & Navbar backdrop support */
+header.bg-white\/95,
+nav.bg-white\/95 {
+  background-color: rgba(17, 24, 39, 0.9) !important;
+  backdrop-filter: blur(12px) !important;
+}
+
+/* Dynamic background custom page classes */
+.bg-\[\#F5F7F9\],
+.bg-\[\#F8FAFC\],
+.bg-[#F5F7F9],
+.bg-[#F8FAFC],
+main.bg-\[\#F5F7F9\],
+section.bg-\[\#F8FAFC\],
+body .bg-\[\#F5F7F9\] {
+  background-color: #0b0f19 !important;
+}
+
+/* Gray/Slate elements adjustments */
+.bg-slate-50,
+.bg-gray-50 {
+  background-color: #171f30 !important;
+}
+
+.bg-slate-100,
+.bg-gray-100 {
+  background-color: #1f293d !important;
+}
+
+/* Educational dynamic modules indicator pills and status colors */
+.bg-blue-50 {
+  background-color: #231b4e !important;
+  color: #a78bff !important;
+}
+
+.bg-emerald-50 {
+  background-color: #062f21 !important;
+  color: #34d399 !important;
+}
+
+.bg-purple-50 {
+  background-color: #2e104e !important;
+  color: #c084fc !important;
+}
+
+/* Pristine Typography Contrast mapping */
+.text-gray-900,
+.text-slate-900,
+.text-\[\#1F1F1F\],
+h1, h2, h3, h4, h5, h6 {
+  color: #f8fafc !important;
+}
+
+.text-gray-800 {
+  color: #e2e8f0 !important;
+}
+
+.text-gray-700 {
+  color: #cbd5e1 !important;
+}
+
+.text-gray-600,
+.text-\[\#5C5C5C\],
+.text-slate-600 {
+  color: #94a3b8 !important;
+}
+
+.text-gray-400,
+.text-gray-500,
+.text-slate-500 {
+  color: #64748b !important;
+}
+
+/* Responsive sidebars scrollbar and container border elements */
+.border,
+.border-t,
+.border-b,
+.border-l,
+.border-r,
+.border-gray-200,
+.border-gray-300,
+.border-slate-200,
+.border-gray-100,
+.border-\[\#D6DBDF\],
+.border-indigo-100,
+.border-emerald-100,
+.border-amber-100 {
+  border-color: rgba(148, 163, 184, 0.12) !important;
+}
+
+/* Custom interactive active elements */
+.text-\[\#0056D2\] {
+  color: #a78bff !important;
+}
+
+.border-blue-600 {
+  border-color: #8b5cf6 !important;
+}
+
+/* Inputs, textareas, controls & fields */
+input, textarea, select {
+  background-color: #171f30 !important;
+  color: #f8fafc !important;
+  border: 1px solid rgba(148, 163, 184, 0.18) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: #8b5cf6 !important;
+  outline: none !important;
+}
+
+/* Re-anchoring active class handlers with original hardcoded blue/violet shades */
+.bg-\[\#0056D2\],
+body .bg-\[\#0056D2\] {
+  background-color: #8b5cf6 !important;
+}
+
+.bg-\[\#0056D2\]\/5 {
+  background-color: rgba(139, 92, 246, 0.15) !important;
+}
+
+.hover\:bg-\[\#0056D2\]:hover {
+  background-color: #7c3aed !important;
+}
+
+.hover\:bg-\[\#004BB5\]:hover {
+  background-color: #6d28d9 !important;
+}
+
+.text-[#0056D2] {
+  color: #a78bff !important;
+}
+
+/* Sandbox tables & charts */
+th, .th {
+  background-color: #171f30 !important;
+  color: #cbd5e1 !important;
+}
+
+td, .td {
+  background-color: #111827 !important;
+  color: #cbd5e1 !important;
+  border-color: rgba(148, 163, 184, 0.12) !important;
+}
+
+/* Multi-colored box alerts inside lessons */
+.bg-\[\#FAF8FF\] {
+  background-color: #1e1b4b !important;
+}
+.bg-\[\#F6FFFA\] {
+  background-color: #064e3b !important;
+}
+.bg-\[\#FFFDF6\] {
+  background-color: #78350f !important;
+}
+
+/* Dynamic lists overlays hover state */
+.hover\:bg-gray-50:hover, 
+.hover\:bg-slate-50:hover, 
+.hover\:bg-gray-100:hover,
+.hover\:bg-slate-100:hover {
+  background-color: #1f293d !important;
+}
+
+/* Printable certificate elements must remain authentic deep text on crisp white paper */
+.print-sertif,
+.print-sertif * {
+  background-color: transparent !important;
+  color: #1e293b !important;
+}
+.print-sertif {
+  background-color: #ffffff !important;
+  color: #1e293b !important;
+  border-color: #475569 !important;
+}
+.print-sertif h1, .print-sertif h2, .print-sertif h3, .print-sertif h4, .print-sertif span, .print-sertif p, .print-sertif div {
+  color: #1e293b !important;
+}
+

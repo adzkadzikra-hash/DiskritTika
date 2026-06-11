@@ -1,0 +1,6 @@
+{
+  "name": "DiskritTika",
+  "description": "Platform e-learning interaktif matematika diskrit untuk mempelajari Aljabar Boolean, Peluang, Kombinatorika, dan Teori Graf.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
